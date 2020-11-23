@@ -16,7 +16,7 @@ export class Organization {
   @Column('date')
   startDate: Date;
 
-  @Column('numeric')
+  @Column('int')
   employeeCount: number;
 
   @Column('int') // enum not supported for postgres

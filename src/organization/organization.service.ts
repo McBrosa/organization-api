@@ -26,7 +26,17 @@ export class OrganizationService {
   }
 
   findAll() {
-    return this.organizationsRepository.find();
+    return this.organizationsRepository
+      .find()
+      .then((organizations: CreateOrganizationDto[]) => {
+        return organizations.map((organization: CreateOrganizationDto) => {
+          return {
+            ...organization,
+            // Converts 0 to 'private' and 1 'public'
+            management: Management[organization.management],
+          };
+        });
+      });
   }
 
   findOne(id: string) {

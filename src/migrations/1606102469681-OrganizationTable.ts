@@ -25,7 +25,7 @@ export class OrganizationTable1606102469681 implements MigrationInterface {
           },
           {
             name: 'employeeCount',
-            type: 'numeric',
+            type: 'integer',
             isNullable: false,
           },
           {
