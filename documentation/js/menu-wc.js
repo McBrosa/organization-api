@@ -55,13 +55,13 @@ customElements.define('compodoc-menu', class extends HTMLElement {
                                 <a href="modules/AppModule.html" data-type="entity-link">AppModule</a>
                                     <li class="chapter inner">
                                         <div class="simple menu-toggler" data-toggle="collapse" ${ isNormalMode ?
-                                            'data-target="#controllers-links-module-AppModule-effefda902cc321007d67b55cbfb1466"' : 'data-target="#xs-controllers-links-module-AppModule-effefda902cc321007d67b55cbfb1466"' }>
+                                            'data-target="#controllers-links-module-AppModule-cc41233571a2853ad1f1bd4efef56e69"' : 'data-target="#xs-controllers-links-module-AppModule-cc41233571a2853ad1f1bd4efef56e69"' }>
                                             <span class="icon ion-md-swap"></span>
                                             <span>Controllers</span>
                                             <span class="icon ion-ios-arrow-down"></span>
                                         </div>
-                                        <ul class="links collapse" ${ isNormalMode ? 'id="controllers-links-module-AppModule-effefda902cc321007d67b55cbfb1466"' :
-                                            'id="xs-controllers-links-module-AppModule-effefda902cc321007d67b55cbfb1466"' }>
+                                        <ul class="links collapse" ${ isNormalMode ? 'id="controllers-links-module-AppModule-cc41233571a2853ad1f1bd4efef56e69"' :
+                                            'id="xs-controllers-links-module-AppModule-cc41233571a2853ad1f1bd4efef56e69"' }>
                                             <li class="link">
                                                 <a href="controllers/AppController.html"
                                                     data-type="entity-link" data-context="sub-entity" data-context-id="modules">AppController</a>
@@ -70,13 +70,13 @@ customElements.define('compodoc-menu', class extends HTMLElement {
                                     </li>
                                 <li class="chapter inner">
                                     <div class="simple menu-toggler" data-toggle="collapse" ${ isNormalMode ?
-                                        'data-target="#injectables-links-module-AppModule-effefda902cc321007d67b55cbfb1466"' : 'data-target="#xs-injectables-links-module-AppModule-effefda902cc321007d67b55cbfb1466"' }>
+                                        'data-target="#injectables-links-module-AppModule-cc41233571a2853ad1f1bd4efef56e69"' : 'data-target="#xs-injectables-links-module-AppModule-cc41233571a2853ad1f1bd4efef56e69"' }>
                                         <span class="icon ion-md-arrow-round-down"></span>
                                         <span>Injectables</span>
                                         <span class="icon ion-ios-arrow-down"></span>
                                     </div>
-                                    <ul class="links collapse" ${ isNormalMode ? 'id="injectables-links-module-AppModule-effefda902cc321007d67b55cbfb1466"' :
-                                        'id="xs-injectables-links-module-AppModule-effefda902cc321007d67b55cbfb1466"' }>
+                                    <ul class="links collapse" ${ isNormalMode ? 'id="injectables-links-module-AppModule-cc41233571a2853ad1f1bd4efef56e69"' :
+                                        'id="xs-injectables-links-module-AppModule-cc41233571a2853ad1f1bd4efef56e69"' }>
                                         <li class="link">
                                             <a href="injectables/AppService.html"
                                                 data-type="entity-link" data-context="sub-entity" data-context-id="modules" }>AppService</a>
@@ -138,6 +138,19 @@ customElements.define('compodoc-menu', class extends HTMLElement {
                             </li>
                         </ul>
                     </li>
+                        <li class="chapter">
+                            <div class="simple menu-toggler" data-toggle="collapse" ${ isNormalMode ? 'data-target="#injectables-links"' :
+                                'data-target="#xs-injectables-links"' }>
+                                <span class="icon ion-md-arrow-round-down"></span>
+                                <span>Injectables</span>
+                                <span class="icon ion-ios-arrow-down"></span>
+                            </div>
+                            <ul class="links collapse " ${ isNormalMode ? 'id="injectables-links"' : 'id="xs-injectables-links"' }>
+                                <li class="link">
+                                    <a href="injectables/DatabaseConfig.html" data-type="entity-link">DatabaseConfig</a>
+                                </li>
+                            </ul>
+                        </li>
                     <li class="chapter">
                         <div class="simple menu-toggler" data-toggle="collapse" ${ isNormalMode ? 'data-target="#miscellaneous-links"'
                             : 'data-target="#xs-miscellaneous-links"' }>

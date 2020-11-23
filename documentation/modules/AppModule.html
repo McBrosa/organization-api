@@ -181,9 +181,23 @@ import { AppController } from &#x27;./app.controller&#x27;;
 import { AppService } from &#x27;./app.service&#x27;;
 import { TypeOrmModule } from &#x27;@nestjs/typeorm&#x27;;
 import { OrganizationModule } from &#x27;./organization/organization.module&#x27;;
+import { ConfigModule } from &#x27;@nestjs/config&#x27;;
+
+import { config } from &#x27;./config&#x27;;
+import { DatabaseConfig } from &#x27;./database.config&#x27;;
 
 @Module({
-  imports: [TypeOrmModule.forRoot(), OrganizationModule],
+  imports: [
+    ConfigModule.forRoot({
+      isGlobal: true,
+      load: [config],
+    }),
+    TypeOrmModule.forRootAsync({
+      imports: [ConfigModule],
+      useClass: DatabaseConfig,
+    }),
+    OrganizationModule,
+  ],
   controllers: [AppController],
   providers: [AppService],
 })
