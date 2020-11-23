@@ -6,14 +6,12 @@ import {
   Put,
   Param,
   Delete,
-  Query,
 } from '@nestjs/common';
 import { OrganizationService } from './organization.service';
 import { CreateOrganizationDto } from './dto/create-organization.dto';
 import { UpdateOrganizationDto } from './dto/update-organization.dto';
-import { ApiPropertyOptional } from '@nestjs/swagger';
 
-@Controller('organization')
+@Controller('organizations')
 export class OrganizationController {
   constructor(private readonly organizationService: OrganizationService) {}
 
