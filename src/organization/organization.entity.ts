@@ -1,6 +1,6 @@
 import { Entity, Column, PrimaryGeneratedColumn } from 'typeorm';
 
-enum Management {
+export enum Management {
   private,
   public,
 }
@@ -14,7 +14,7 @@ export class Organization {
   name: string;
 
   @Column('date')
-  startDate: string;
+  startDate: Date;
 
   @Column('numeric')
   employeeCount: number;

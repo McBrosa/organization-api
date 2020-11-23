@@ -4,6 +4,7 @@ export class CreateOrganizationDto {
   @ApiProperty({
     description: 'The name of the organization',
     type: String,
+    default: 'Your Organization Name',
   })
   name: string;
 
@@ -22,7 +23,8 @@ export class CreateOrganizationDto {
 
   @ApiProperty({
     description: 'The date the organization was founded',
-    type: String,
+    type: Date,
+    default: '2001-10-05',
   })
-  startDate: string;
+  startDate: Date;
 }

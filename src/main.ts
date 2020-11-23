@@ -11,7 +11,6 @@ async function bootstrap() {
     .setTitle('Organization')
     .setDescription('CRUD API')
     .setVersion('1.0')
-    .addTag('organizations')
     .build();
   const document = SwaggerModule.createDocument(app, options);
   SwaggerModule.setup('api', app, document);

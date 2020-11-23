@@ -52,7 +52,7 @@ $ npm run test:e2e
 $ npm run test:cov
 ```
 
-## Code documentation
+## Code Documentation
 ```bash
 # generate code hierarchy documentation
 npm run compodoc
@@ -60,7 +60,7 @@ npm run compodoc
 Accessible at: http://localhost:8080
 
 ## Demo
-Hosted on Heroku:
+Hosted on Heroku and testable through Swagger docs:
 https://nestjs-organization-api.herokuapp.com/api
 
 ## Support

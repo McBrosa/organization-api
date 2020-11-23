@@ -11,6 +11,7 @@ import {
 import { OrganizationService } from './organization.service';
 import { CreateOrganizationDto } from './dto/create-organization.dto';
 import { UpdateOrganizationDto } from './dto/update-organization.dto';
+import { ApiPropertyOptional } from '@nestjs/swagger';
 
 @Controller('organization')
 export class OrganizationController {
@@ -29,11 +30,6 @@ export class OrganizationController {
   @Get(':id')
   findOne(@Param('id') id: string) {
     return this.organizationService.findOne(id);
-  }
-
-  @Get()
-  findSome(@Query('name') name: string) {
-    return this.organizationService.findSome(name);
   }
 
   @Put(':id')
