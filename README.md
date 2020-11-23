@@ -8,6 +8,24 @@
 $ npm install
 ```
 
+## Migrations
+
+### Setup
+```bash
+# setup postgres with TypeORM config
+$ cp ormconfig.example.json ormconfig.json
+```
+_Note_: You must fill in missing config variables
+
+### Run
+```bash
+# setup tables
+$ npm run migration:up
+
+# revert migration:up
+$ npm run migration:revet
+```
+
 ## Running the app
 
 ```bash
