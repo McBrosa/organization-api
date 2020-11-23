@@ -1,6 +1,6 @@
 ## Description
-
-[Nest](https://github.com/nestjs/nest) framework TypeScript starter repository.
+API to manage organization CRUD operations.
+Built with [Nest](https://github.com/nestjs/nest)
 
 ## Installation
 
