@@ -6,6 +6,7 @@ import {
   Put,
   Param,
   Delete,
+  Query,
 } from '@nestjs/common';
 import { OrganizationService } from './organization.service';
 import { CreateOrganizationDto } from './dto/create-organization.dto';
@@ -30,8 +31,8 @@ export class OrganizationController {
     return this.organizationService.findOne(id);
   }
 
-  @Get(':name')
-  findSome(@Param('name') name: string) {
+  @Get()
+  findSome(@Query('name') name: string) {
     return this.organizationService.findSome(name);
   }
 
