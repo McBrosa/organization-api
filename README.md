@@ -2,22 +2,47 @@
 API to manage organization CRUD operations.
 Built with [Nest](https://github.com/nestjs/nest)
 
-## Installation
+---
+## Containerized Build
+### Pre-Requisites
+```
+brew install docker
+```
+
+### Running the app
+```bash
+$ docker-compose up --build -V
+
+# Stops containers and removes containers, networks, volumes, and images created by up
+$ docker-compose down
+```
+>API Endpoint: http://localhost:3000/
+>
+>Swagger Docs: http://localhost:3000/api
+
+---
+## Manual Build
+### Pre-Requisites
+```
+brew install postgres
+```
+
+### Installation
 
 ```bash
 $ npm install
 ```
 
-## Migrations
+### Migrations
 
-### Setup
+#### Setup
 ```bash
 # setup postgres with TypeORM config
 $ cp ormconfig.example.json ormconfig.json
 ```
 _Note_: You must fill in missing config variables
 
-### Run
+#### Run
 ```bash
 # setup tables
 $ npm run migration:up
@@ -26,7 +51,7 @@ $ npm run migration:up
 $ npm run migration:revet
 ```
 
-## Running the app
+### Running the app
 
 ```bash
 # development
@@ -38,8 +63,11 @@ $ npm run start:dev
 # production mode
 $ npm run start:prod
 ```
-
-## Test
+>API Endpoint: http://localhost:3000/
+>
+>Swagger Docs: http://localhost:3000/api
+---
+### Test
 
 ```bash
 # unit tests
@@ -52,12 +80,12 @@ $ npm run test:e2e
 $ npm run test:cov
 ```
 
-## Code Documentation
+### Code Documentation
 ```bash
 # generate code hierarchy documentation
 npm run compodoc
 ```
-Accessible at: http://localhost:8080
+> Accessible at: http://localhost:8080
 
 ## Demo
 Hosted on Heroku and testable through Swagger docs:
